@@ -86,6 +86,17 @@ h2 {
     flex: 1;
 }
 
+/* Kiểu dáng LỖI DEAD CLICK */
+.fake-link {
+    color: #007bff; /* Màu xanh dương của link */
+    text-decoration: underline; /* Gạch chân */
+    cursor: pointer; /* Thay đổi con trỏ thành bàn tay */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    /* Quan trọng: Không có chức năng click */
+}
+
 /* Expandable Box */
 .expandable-box {
     background: #f8f9fa;
@@ -134,7 +145,7 @@ h2 {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Quan trọng để padding không làm tăng chiều rộng */
+    box-sizing: border-box; 
 }
 
 .checkbox-container {
@@ -152,8 +163,14 @@ h2 {
     color: white;
 }
 
-#submit-btn:hover {
+#submit-btn:hover:not(:disabled) {
     background-color: #c82333;
+}
+
+/* Thêm style cho nút bị disabled (khi đang xử lý) để Rage Click dễ xảy ra hơn */
+#submit-btn:disabled {
+    background-color: #6c757d; /* Màu xám */
+    cursor: not-allowed;
 }
 
 .description, .note {
@@ -162,10 +179,15 @@ h2 {
     margin-top: 5px;
 }
 
+/* Kiểu dáng LỖI EXCESSIVE SCROLLING (Footer lớn) */
 footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
     border-top: 1px solid #eee;
     color: #6c757d;
+    
+    background-color: #e9ecef;
+    padding-top: 100px;
+    padding-bottom: 200px; /* Cố ý tạo khoảng trống lớn */
 }
