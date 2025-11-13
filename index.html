@@ -1,163 +1,143 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang Kiểm Thử Clarity Heatmap - UI/UX Test</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "u4vfp4cn5f");
-    </script>
-  </head>
-  <body>
-    <header>
-      <h1>Trang Thử Nghiệm UI/UX - Clarity Demo</h1>
-      <p>Phân tích hành vi người dùng qua Heatmap và Session Recording.</p>
-    </header>
 
-    <main>
-      <section id="cta-section">
-        <h2>Hành Động Chính (CTA)</h2>
-        <div class="button-group">
-          <button id="main-cta" class="primary-btn">
-            <a
-              href="http://www.google.com/intl/en/chrome/browser/"
-              target="_blank"
-              style="text-decoration: none;"
-              >Mua Ngay (Quan Trọng)</a>
-          </button>
-          <button id="secondary-cta" class="secondary-btn">
-            Xem Chi Tiết (Phụ)
-          </button>
-        </div>
-        <p class="description">
-          Quan sát xem người dùng click vào nút nào nhiều hơn.
-        </p>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Kiểm Thử Clarity Heatmap - UI/UX Test</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "u4vfp4cn5f");
+  </script>
+</head>
 
-      <hr />
+<body>
+  <header>
+    <h1>Trang Thử Nghiệm UI/UX - Clarity Demo</h1>
+    <p>Phân tích hành vi người dùng qua Heatmap và Session Recording.</p>
+  </header>
 
-      <section id="content-section">
-        <h2>Nội Dung Dài để Cuộn Trang</h2>
-        <div class="content-block">
-          <img
-            src="https://th.bing.com/th/id/R.18f14463a91f8316ec8daea09ab5baaf?rik=1ONxPv6onaga7A&pid=ImgRaw&r=0"
-            alt="Sản phẩm A"
-            class="product-img"
-          />
-          <div class="text-content">
-            <h3>Sản Phẩm Tối Ưu A</h3>
+  <main>
+    <section id="cta-section">
+      <h2>Hành Động Chính (CTA)</h2>
+      <div class="button-group">
+        <button id="main-cta" class="primary-btn">
+          <a href="http://www.google.com/intl/en/chrome/browser/" target="_blank" style="text-decoration: none">Download
+            Chrome</a>
+        </button>
+        <button id="secondary-cta" class="secondary-btn">
+          <a href="https://thisisadeadlink" target="_blank" style="text-decoration: none">Dead Link</a>
+        </button>
+      </div>
+      <p class="description">
+        Quan sát xem người dùng click vào nút nào nhiều hơn.
+      </p>
+    </section>
 
-            <p class="dead-link-trap">
-              <span class="fake-link"
-                >Bấm vào đây để xem video giới thiệu chi tiết!</span
-              >
-            </p>
-            <p>
-              Đây là một đoạn văn bản dài cố ý để người dùng phải cuộn xuống để
-              đọc. Heatmap cuộn trang sẽ cho biết bao nhiêu người dùng thực sự
-              đọc đến cuối đoạn này.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat...
-            </p>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-          </div>
-        </div>
+    <hr />
 
-        <div class="expandable-box" onclick="this.classList.toggle('expanded')">
-          <h3>Click để mở (Accordion/Tab Test)</h3>
-          <p class="hidden-content">
-            Nội dung này chỉ hiện ra khi click. Clarity sẽ ghi nhận tương tác
-            hoặc ghi nhận "Rage Click" nếu có vấn đề về tốc độ load.
+    <section id="content-section">
+      <h2>Nội Dung Dài để Cuộn Trang</h2>
+      <div class="content-block">
+        <img src="https://th.bing.com/th/id/R.18f14463a91f8316ec8daea09ab5baaf?rik=1ONxPv6onaga7A&pid=ImgRaw&r=0"
+          alt="Sản phẩm A" class="product-img" />
+        <div class="text-content">
+          <h3>Sản Phẩm Tối Ưu A</h3>
+
+          <p class="dead-link-trap">
+            <span class="fake-link">Bấm vào đây để xem video giới thiệu chi tiết!</span>
+          </p>
+          <p>
+            Đây là một đoạn văn bản dài cố ý để người dùng phải cuộn xuống để
+            đọc. Heatmap cuộn trang sẽ cho biết bao nhiêu người dùng thực sự
+            đọc đến cuối đoạn này.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat...
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
           </p>
         </div>
-      </section>
+      </div>
 
-      <hr />
-
-      <section id="form-section">
-        <h2>Form Đăng Ký</h2>
-        <form id="test-form">
-          <label for="name">Tên:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Nhập tên của bạn"
-          />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Nhập email của bạn"
-          />
-
-          <label for="feedback">Phản hồi (Tùy chọn - để trống):</label>
-          <textarea
-            id="feedback"
-            name="feedback"
-            rows="4"
-            placeholder="Viết phản hồi của bạn"
-          ></textarea>
-
-          <label class="checkbox-container">
-            <input type="checkbox" id="subscribe" name="subscribe" />
-            Đồng ý nhận tin tức (Check Box Test)
-          </label>
-          <!-- bug dead click -->
-          <button type="submit" id="submit-btn">Gửi Đăng Ký</button>
-        </form>
-        <p class="note">
-          Kiểm tra xem người dùng bỏ trống trường nào hoặc mất bao lâu để điền
-          Form.
+      <div class="expandable-box" onclick="this.classList.toggle('expanded')">
+        <h3>Click để mở (Accordion/Tab Test)</h3>
+        <p class="hidden-content">
+          Nội dung này chỉ hiện ra khi click. Clarity sẽ ghi nhận tương tác
+          hoặc ghi nhận "Rage Click" nếu có vấn đề về tốc độ load.
         </p>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-      <p>&copy; 2025 Trang Kiểm Thử UI/UX</p>
-      <a href="#top">Về đầu trang</a>
-    </footer>
+    <hr />
 
-    <script>
-      document
-        .getElementById("test-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Ngăn chặn form gửi đi ngay lập tức
-          const submitBtn = document.getElementById("submit-btn");
-          submitBtn.disabled = true; // Vô hiệu hóa nút
-          submitBtn.textContent = "Đang xử lý (Chờ 5 giây)...";
+    <section id="form-section">
+      <h2>Form Đăng Ký</h2>
+      <form id="test-form">
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" />
 
-          // Tăng độ trễ cố ý (5 giây)
-          setTimeout(() => {
-            submitBtn.textContent = "Gửi Đăng Ký";
-            submitBtn.disabled = false;
-            // Có thể thêm dòng này để mô phỏng việc gửi thành công
-            // alert('Đăng ký đã được xử lý (Sau 5 giây)');
-          }, 5000);
-        });
-    </script>
-  </body>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email của bạn" />
+
+        <label for="feedback">Phản hồi (Tùy chọn - để trống):</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Viết phản hồi của bạn"></textarea>
+
+        <label class="checkbox-container">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          Đồng ý nhận tin tức (Check Box Test)
+        </label>
+        <!-- bug dead click -->
+        <button type="submit" id="submit-btn">Gửi Đăng Ký</button>
+      </form>
+      <p class="note">
+        Kiểm tra xem người dùng bỏ trống trường nào hoặc mất bao lâu để điền
+        Form.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trang Kiểm Thử UI/UX</p>
+    <a href="#top">Về đầu trang</a>
+  </footer>
+
+  <script>
+    document
+      .getElementById("test-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Ngăn chặn form gửi đi ngay lập tức
+        const submitBtn = document.getElementById("submit-btn");
+        submitBtn.disabled = true; // Vô hiệu hóa nút
+        submitBtn.textContent = "Đang xử lý (Chờ 5 giây)...";
+
+        // Tăng độ trễ cố ý (5 giây)
+        setTimeout(() => {
+          submitBtn.textContent = "Gửi Đăng Ký";
+          submitBtn.disabled = false;
+          // Có thể thêm dòng này để mô phỏng việc gửi thành công
+          // alert('Đăng ký đã được xử lý (Sau 5 giây)');
+        }, 5000);
+      });
+  </script>
+</body>
+
 </html>
