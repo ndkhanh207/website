@@ -20,7 +20,7 @@ main {
     padding: 20px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -41,7 +41,9 @@ h2 {
     gap: 15px;
 }
 
-.primary-btn, .secondary-btn, #submit-btn {
+.primary-btn,
+.secondary-btn,
+#submit-btn {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -51,7 +53,8 @@ h2 {
 }
 
 .primary-btn {
-    background-color: #28a745; /* Màu xanh lá cây nổi bật */
+    background-color: #28a745;
+    /* Màu xanh lá cây nổi bật */
     color: white;
 }
 
@@ -60,7 +63,8 @@ h2 {
 }
 
 .secondary-btn {
-    background-color: #ffc107; /* Màu vàng */
+    background-color: #ffc107;
+    /* Màu vàng */
     color: #333;
 }
 
@@ -88,9 +92,12 @@ h2 {
 
 /* Kiểu dáng LỖI DEAD CLICK */
 .fake-link {
-    color: #007bff; /* Màu xanh dương của link */
-    text-decoration: underline; /* Gạch chân */
-    cursor: pointer; /* Thay đổi con trỏ thành bàn tay */
+    color: #007bff;
+    /* Màu xanh dương của link */
+    text-decoration: underline;
+    /* Gạch chân */
+    cursor: pointer;
+    /* Thay đổi con trỏ thành bàn tay */
     font-weight: bold;
     display: inline-block;
     margin-top: 10px;
@@ -107,7 +114,8 @@ h2 {
     border-radius: 5px;
     overflow: hidden;
     transition: height 0.3s ease;
-    height: 50px; /* Chiều cao ban đầu */
+    height: 50px;
+    /* Chiều cao ban đầu */
 }
 
 .expandable-box.expanded {
@@ -145,7 +153,7 @@ h2 {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .checkbox-container {
@@ -159,7 +167,8 @@ h2 {
 #submit-btn {
     margin-top: 20px;
     width: 100%;
-    background-color: #dc3545; /* Màu đỏ */
+    background-color: #dc3545;
+    /* Màu đỏ */
     color: white;
 }
 
@@ -169,11 +178,13 @@ h2 {
 
 /* Thêm style cho nút bị disabled (khi đang xử lý) để Rage Click dễ xảy ra hơn */
 #submit-btn:disabled {
-    background-color: #6c757d; /* Màu xám */
+    background-color: #6c757d;
+    /* Màu xám */
     cursor: not-allowed;
 }
 
-.description, .note {
+.description,
+.note {
     font-style: italic;
     color: #6c757d;
     margin-top: 5px;
@@ -186,8 +197,26 @@ footer {
     margin-top: 20px;
     border-top: 1px solid #eee;
     color: #6c757d;
-    
+
     background-color: #e9ecef;
     padding-top: 100px;
-    padding-bottom: 200px; /* Cố ý tạo khoảng trống lớn */
+    padding-bottom: 200px;
+    /* Cố ý tạo khoảng trống lớn */
+}
+
+.card {
+    background-color: #292929;
+    display: inline-block;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.box {
+    background: #fff;
+    border: 2px solid #dc3545;
+    display: inline-block;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
