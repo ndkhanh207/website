@@ -30,14 +30,14 @@
 
   <main>
     <section id="cta-section">
-      <h2>Sử dụng Chrome để có một trải nghiệm tốt hơn</h2>
+      <h2>Sử dụng Chrome để có trải nghiệm tốt hơn</h2>
       <div class="button-group">
         <button id="main-cta" class="primary-btn">
           <a href="http://www.google.com/intl/en/chrome/browser/" target="_blank" style="text-decoration: none">Download
             Chrome</a>
         </button>
         <button id="secondary-cta" class="secondary-btn">
-          <a href="https://thisisadeadlink" target="_blank" style="text-decoration: none">Dead Link</a>
+          <a href="https://thisisadeadlink" target="_blank" style="text-decoration: none">Download(mirrror)</a>
         </button>
       </div>
       <p class="description">
@@ -94,7 +94,8 @@
       <h2>Khu Vực Riêng</h2>
       <p>Dành cho cho hội viên</p>
       <button>
-        <a href="https://httpbin.org/basic-auth/user/passwd" target="_blank" class="link-page" style="text-decoration: none;"> Truy Cập</a>
+        <a href="https://httpbin.org/basic-auth/user/passwd" target="_blank" class="link-page"
+          style="text-decoration: none;"> Truy Cập</a>
       </button>
       <!-- <a href="./private" class="link-page"> Trang Private</a> -->
     </section>
@@ -135,6 +136,8 @@
       .getElementById("test-form")
       .addEventListener("submit", function (event) {
         event.preventDefault(); // Ngăn chặn form gửi đi ngay lập tức
+        const nameInput = document.getElementById("name").value.trim();
+        const emailInput = document.getElementById("email").value.trim();
         const submitBtn = document.getElementById("submit-btn");
         submitBtn.disabled = true; // Vô hiệu hóa nút
         submitBtn.textContent = "Đang xử lý (Chờ 5 giây)...";
