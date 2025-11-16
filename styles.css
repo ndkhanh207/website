@@ -342,3 +342,31 @@ footer {
         /* Move up 1px for a subtle finish */
     }
 }
+
+
+.top-nav {
+    background: #222;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.25s;
+}
+
+.top-nav a:hover {
+    background: #444;
+}
